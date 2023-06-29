@@ -1,0 +1,123 @@
+
+/***************************
+    use common footer.scss
+***************************/
+footer .footer-wrapper {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1b080d;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer .footer-container p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer .footer-container p:last-child {
+    text-transform: uppercase;
+    a {
+        color: rgb(243, 227, 8);
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    a:hover {
+        color: rgb(255, 166, 0);
+        transition: color .9s ease;
+    }
+}
+
+footer .social-container a {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+footer .social-container a:hover {
+    color: rgb(255, 166, 0);
+}
+
+footer .go-to-up {
+    z-index: 5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 4px;
+    background-color: #1b080d;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+footer .go-to-up a {
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    background-color: transparent
+}
+
+footer .go-to-up i:hover {
+    color: rgb(255, 166, 0);
+}
+
+.footer-wrapper .btn-go-to-up {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer .go-to-up .fa-chevron-up{
+    color: white;
+}
+
+/* min-width: 760px */
+@include mq($tablet){
+
+    footer .footer-container p,
+    footer .social-container {
+        text-align: left;
+    }
+}
+
+/* min-width: 1200px */
+@include mq($desktop-2){
+
+    footer .footer-container {
+        display: flex;
+        margin: 0 auto;
+        .left-footer {
+            width: 70%;
+        }
+        .right-footer {
+            padding-top: 5px;
+            width: 30%;
+            .social-container {
+               text-align: center;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

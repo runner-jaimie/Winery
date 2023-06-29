@@ -1,0 +1,265 @@
+/**********************************
+    index.scss
+**********************************/
+/* section : bistro start*/
+.bistro,
+.wines,
+.shop-online,
+.wine-tour{
+    padding: 30px 0;
+    position: relative;
+}
+
+.section-container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.bistro-content {
+    position: absolute;
+    padding: 30px 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.bistro h2 {
+    color: white;
+    position: absolute;
+    padding: 60px;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bistro-title p:first-child {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.bistro-title p a {
+    margin-bottom: 10px;
+}
+/* section : bistro end*/
+
+/* section : wines start*/
+.section-container {
+    text-align: center;
+}
+.section-container .special-span {
+    font-size: 1.7em;
+    line-height: 40px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-container .special-p {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.section-container .product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .wine-col {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.wine-col img {
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: rgba(214, 214, 214, 0.5);
+}
+
+.wine-col img:hover,
+.wine-col img:focus {
+    border: 1px solid  rgba(231, 15, 15, 0.7);
+    cursor: pointer;
+}
+
+.wine-col .price {
+    color: rgba(255, 0, 0, 0.9);
+}
+
+.wine-col p {
+    font-size: .9em;
+    text-transform: uppercase;
+}
+/* section : wines end*/
+
+/* section : shop-online start*/
+.shop-online-content {
+    position: absolute;
+    padding: 30px 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.shop-online-title p:first-child {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.shop-online-title p a {
+    margin-bottom: 10px;
+}
+/* section : shop-online end*/
+
+/* section : wine-tour start*/
+.tour-content {
+    position: absolute;
+    padding: 30px 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.tour-title p:first-child {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.tour-title p a {
+    margin-bottom: 10px;
+}
+/* section : wine-tour end*/
+
+/* min-width: 570px */
+@include mq($mobile){
+
+    .index-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+  
+    /* section : bistro start*/
+    .bistro h2 {
+        padding: 50px;
+        font-size: 1.8em;
+    }
+    
+    .bistro-title p:first-child {
+        font-size: 1em;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .bistro-title p a {
+        margin-bottom: 5px;
+    }
+    /* section : bistro end*/
+
+    /* section : wines start*/
+    .section-container .special-span {
+        font-size: 1.4em;
+    }
+
+    .section-container .special-p,
+    .wine-col p {
+        font-size: .7em;
+    }
+    /* section : wines end*/
+
+    /* section : shop-online & wine-tour start*/
+    .shop-online-title p:first-child,
+    .tour-title p:first-child {
+        font-size: .9em;
+        line-height: 17px;
+        margin-bottom: 20px;
+    }
+    /* section : shop-online & wine-tou end*/
+}
+
+/* min-width: 760px */
+@include mq($tablet){
+
+    /* bistro section start */
+    .bistro h2 {
+        padding: 50px;
+        font-size: 2.5em;
+    }
+    
+    .bistro-title p:first-child {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    /* bistro section end */
+
+    /* wines section start */
+    .section-container .special-span {
+        font-size: 1.5em;
+    }
+
+    .section-container .special-p {
+        font-size: .8em;
+    }
+
+    .wine-col p {
+        font-size: .7em;
+    }
+    /* wines section end */
+
+    /* section : shop-online start*/
+    .shop-online-title p:first-child {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    /* section : shop-online end*/
+
+    /* section : wine-tour start*/
+    .tour-title p:first-child {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    /* section : wine-tour end*/
+}
+
+/* min-width: 980px */
+@include mq($desktop-1){
+
+    /* section : wines start*/
+    .section-container .special-span {
+        font-size: 1.7em;
+        line-height: 40px;
+    }
+
+    .section-container .special-p {
+        font-size: 1em;
+        line-height: 20px;
+    }
+
+    .wine-col p {
+        font-size: .9em;
+    }
+    /* section : wines end*/
+}
+
+/* min-width: 1200px */
+@include mq($desktop-2){
+
+    /* section : wines start*/
+    .wine-col p {
+        font-size: 1em;
+    }
+    /* section : wines end*/
+}
+
+

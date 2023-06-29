@@ -1,0 +1,110 @@
+/* hero image for index page start : index.scss */
+.hero-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+    color: white;
+    background: radial-gradient(rgb(66, 65, 61), rgb(44, 42, 31));
+}
+.hero-content {
+    max-width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.hero-content .welcome {
+    display: block;
+    font-size: 1.1em;
+    line-height: 15px;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.hero-content .intro-message {
+    display: block;
+    font-size: 1.3em;
+    line-height: 35px;
+    width: 100%;
+}
+
+.hero-content ul {
+    list-style: none;
+}
+
+.hero-content ul li {
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.hero-content p:last-child {
+    margin-top: 30px;
+    text-align: center;
+}
+/* hero image for index page end : index.scss */
+
+
+/* min-width: 760px */
+@include mq($tablet){
+    /* hero content start */
+    .hero-wrapper {
+        max-width: 1260px;
+        width: 100%;
+        position: relative;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        width: 400px;
+    }
+    /* hero content end */
+}
+
+/* min-width: 980px */
+@include mq($desktop-1){
+    /* hero content start */
+    .hero-content {
+        width: 500px;
+    }
+    /* hero content end */
+}
+
+
+/* min-width: 1200px */
+@include mq($desktop-2){
+
+    /* hero content start */
+    .hero-content {
+        width: 650px;
+    }
+
+    .hero-content .welcome {
+        font-size: 1.7em;
+        line-height: 15px;
+    }
+    .hero-content .intro-message {
+        font-size: 2.1em;
+        line-height: 50px;
+    }
+    
+    .hero-content ul li {
+        line-height: 35px;
+        font-size: 1.4em;
+    }
+    /* hero content end */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+//site variables
+:root {
+ /* color */
+ --color-white: #ffffff;
+ --color-light-white: #f1f1f1;
+ --color-beige: #f4efe7;
+ --color-light-gray: #cacaca;
+ --color-black: #000;
+ --color-cocoa: #8b7777;
+
+ /* Font size */
+ --font-large: 30px;
+ --font-medium: 19px;
+ --font-regular: 16px;
+ --font-small: 14px;
+ --font-micro: 12px;
+
+ /* Font family*/
+ --font-h1: "Karla", sans-serif;
+ --font-h2: "Noto Sans", sans-serif;
+ --font-h3-p: "Open Sans", sans-serif;
+
+ /* Font weight */
+ --weight-bold: 700;
+ --weight-semi-bold: 600;
+ --weight-regular: 400;
+}
+
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Media Query Breakpoints
+$desktop-2: em(1200);
+$desktop-1: em(979);
+$tablet: em(759);
+$mobile: em(570);

@@ -1,0 +1,72 @@
+//white-wines.scss
+.white-wines-title h2 {
+
+    color: rgb(102, 101, 101);
+    font-size: 2em;
+    height: 50px;
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* min-width: 980px */
+    @include mq($desktop-1){
+        font-size: 2.5em;
+        letter-spacing: 3px;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    /* min-width: 1200px */
+    @include mq($desktop-2){
+        font-size: 3em;
+        letter-spacing: 5px;
+        margin-top: 300px;
+    }
+}
+
+.white-wines-galleries {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    align-self: center;
+    justify-items: center;
+    margin: 50px 0 100px 0;
+
+    .white-wine-col {
+       
+        width: 80%;
+        float: left;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        img {
+            border: 1px solid  rgba(0,0,0,.2);
+        }
+        
+        img:hover,
+        img:focus {
+            border: 1px solid  rgba(231, 15, 15, 0.7);
+            cursor: pointer;
+        }
+        
+        h3, p {
+            text-align: center;
+        }
+    }
+
+    /* min-width: 760px */
+    @include mq($tablet){
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* min-width: 980px */
+    @include mq($desktop-1){
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* min-width: 1200px */
+    @include mq($desktop-2){
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

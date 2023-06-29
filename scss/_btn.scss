@@ -1,0 +1,23 @@
+/* use common button : button.scss start*/
+.btn {
+    background-color: rgba(224,184,30,.9);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px 12px;
+    display: block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgba(255, 227, 115, 0.9);
+    color: black;
+    cursor: pointer;
+}
+/* common button css : button.scss end*/
+
+

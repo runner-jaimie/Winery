@@ -1,0 +1,219 @@
+.bistro-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .bistro-menu-title h2 {
+
+        color: rgb(102, 101, 101);
+        font-size: 2em;
+        height: 50px;
+        margin-top: 100px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        /* min-width: 980px */
+        @include mq($desktop-1){
+            font-size: 2.5em;
+            letter-spacing: 3px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+    
+        /* min-width: 1200px */
+        @include mq($desktop-2){
+            font-size: 3em;
+            letter-spacing: 5px;
+            margin-top: 300px;
+        }
+    }
+    
+    .bistro-menu-galleries {
+        margin-top: 100px;
+
+        .bistro-menus {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 100px;
+
+            .menu-container {
+               width: 100%;
+
+                .menu-item {
+
+                    .menu-title {
+                        font-size: 1.8em;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    img {
+                        margin: 0 10%;
+                        width: 80%;
+                        border: 1px solid  rgba(0,0,0,.2);
+                    }
+                }
+
+                .items {
+                    margin: 0 10%;
+
+                    table, td, th {
+                        border: 1px solid  rgba(0,0,0,.2);
+                    }
+
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+
+                    th {
+                        letter-spacing: 2px;
+                        font-size: 1.2em;
+                        height: 70px;
+                        background-color: rgba(219, 152, 26, 0.2);
+                    }
+
+                    td {
+                        text-align: left;
+                        height: 35px;
+                        vertical-align: middle;
+                        font-size: 0.9em;
+                        letter-spacing: 2px;
+                        padding-left: 10px;
+                    }
+
+                    td:hover,
+                    td:focus,
+                    td:active {
+                        background-color: rgba(255, 209, 209,.3);
+                    }
+                }
+                
+                /* min-width: 570px */
+                @include mq($mobile){
+                    display: grid;
+                    grid-gap: 1px;
+                    grid-template-columns: repeat(2, 1fr);
+                    .menu-item {
+                        .menu-title {
+                            font-size: 1.8em;
+                            margin-bottom: 16px;
+                        }
+                    }
+                    
+                    .items {
+                        margin-top: 48px;
+
+                        table {
+                            width: 100%;
+                            height: 37.1vw;
+                            max-height: 458px;
+                        }
+                       
+                        th {
+                            height: 60px;
+                            font-size: 1.4em;
+                            letter-spacing: 2px;
+                        }
+    
+                        td {
+                            height: 37px;
+                            font-size: 0.8em;
+                            letter-spacing: 1px;
+                        } 
+                    }
+                }
+
+                /* min-width: 760px */
+                @include mq($tablet){
+
+                    .menu-item {
+                        .menu-title {
+                            font-size: 2em;
+                            margin-bottom: 17px;
+                        }
+                    }
+
+                    .items {
+                        margin-top: 55px;
+
+                        table {
+                            width: 100%;
+                            height: 37.6vw;
+                            max-height: 458px;
+                        }
+
+                        th {
+                            height: 67px;
+                            font-size: 1.4em;
+                            letter-spacing: 3px;
+                        }
+    
+                        td {
+                            height: 55px;
+                            font-size: 1.2em;
+                            letter-spacing: 2px;
+                        }
+                    }
+                } 
+
+                /* min-width: 980px */
+                @include mq($desktop-1){
+
+                    .menu-item {
+                        .menu-title {
+                            font-size: 2.5em;
+                            margin-bottom: 19px;
+                        }
+                    }
+
+                    .items {
+                        margin-top: 65px;
+
+                        table {
+                            width: 100%;
+                            height: 37.6vw;
+                            max-height: 458px;
+                        }
+
+                        th {
+                            height: 97px;
+                            font-size: 1.6em;
+                        }
+    
+                        td {
+                            height: 70px;
+                            font-size: 1.3em;
+                        }
+                    }
+                } 
+                /* min-width: 1200px */
+                @include mq($desktop-2){
+                    .items {
+
+                        th {
+                            height: 150px;
+                            font-size: 1.8em;
+                        }
+    
+                        td {
+                            height: 76px;
+                            font-size: 1.5em;
+                        }
+                    }
+                } 
+
+            }
+
+            .menu-container:last-child {
+                margin-bottom: 150px;
+            }
+
+            
+        }
+    
+    }
+}

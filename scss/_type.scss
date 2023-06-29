@@ -1,0 +1,27 @@
+h1 {
+ font-size: var(--font-large);
+ font-weight: var(--weight-bold);
+ font-family: var(--font-h1);
+ margin: 16px 0;
+}
+
+h2 {
+ font-size: var(--font-medium);
+ font-weight: var(--weight-semi-bold);
+ font-family: var(--font-h2);
+ margin: 8px 0;
+}
+
+h3 {
+ font-size: var(--font-regular);
+ font-weight: var(--font-regular);
+ font-family: var(--font-h3-p);
+ margin: 8px 0;
+}
+
+p {
+ font-size: var(--font-small);
+ font-weight: var(--font-regular);
+ font-family: var(--font-h3-p);
+ margin: 4px 0;
+}

@@ -1,0 +1,110 @@
+/*************************
+    use common site.scss
+*************************/
+/* foot-site-menu */
+.site-wrapper {
+    background-image: url("../images/bg-site.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 0;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+.site-wrapper .site-container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.site-wrapper .site-row {
+    display: block
+}
+
+.site-wrapper .col-site {
+    padding-bottom: 25px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.site-wrapper .col-site h3 {
+    font-size: 1.5em;
+    line-height: 25px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 0;
+    letter-spacing: 3px;
+}
+
+.col-site .site-menus ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.col-site .site-menus li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.col-site .site-menus li a {
+    font-size: 1em;
+    line-height: 26px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+.col-site .site-menus li a:hover,
+.col-site .site-menus li a:focus,
+.col-site .site-menus li a:active {
+    color: rgb(248, 112, 0);
+}
+
+/* min-width: 760px */
+@include mq($tablet){
+
+    .site-wrapper {
+        height: 300px;
+    }
+   
+    .site-wrapper .site-row {
+        display: flex;
+    }
+    .site-wrapper .col-site h3 {
+        font-size: 1.9em;
+        margin-bottom: 20px;
+    }
+
+    .col-site .site-menus li {
+        line-height: 40px;
+    }
+
+    .col-site .site-menus li a {
+        font-size: 1.2em;
+    }
+}
+
+/* min-width: 1200px */
+@include mq($desktop-2){
+   
+    .site-wrapper .site-container {
+        margin: 0 auto;
+    }
+
+}

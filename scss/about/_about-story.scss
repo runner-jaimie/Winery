@@ -1,0 +1,142 @@
+/* About story*/
+
+#about__story {
+ //background-color: var(--color-beige);
+ width: 100%;
+ text-align: center;
+}
+
+.about__story {
+ padding: 10px 0;
+ position: relative;
+ top: 40px;
+ text-align: center;
+ align-items: center;
+ //background-color: var(--color-cocoa);
+ border-bottom: 1px solid var(--color-cocoa);
+ letter-spacing: 3px;
+}
+
+.about__story__description {
+ text-align: left;
+ margin-top: 20px;
+ padding: 50px 25px;
+}
+
+.about__story__container {
+ display: flex;
+ flex-direction: column;
+ width: 90%;
+ text-align: center;
+ margin: 0px auto;
+}
+
+.about__story__container p {
+ margin: 20px 0;
+ //align-self: center;
+ max-width: 1200px;
+ padding: 5px 0 35px 2px;
+ text-align: left;
+}
+
+@include mq($mobile){
+    .about__story__description {
+        padding: 50px 32px;
+    }
+}
+
+@include mq($tablet){
+
+ :root {
+  /* Font size */
+  --font-large: 50px;
+  --font-medium: 25px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+ }
+
+ .about__story {
+  padding: 10px 0;
+  position: relative;
+  top: 60px;
+ }
+
+ .about__story__description {
+  //text-align: center;
+  margin-top: 40px;
+  padding: 50px 37px;
+ }
+
+ .about__story__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  margin: 0 auto;
+  padding: 50px 0;
+ }
+
+ .about__story__container p {
+    padding: 0 0 35px 2px;
+    margin-top: 0;
+}
+
+ .story__wine__img {
+  grid-row: 3/4;
+ }
+}
+
+@include mq($desktop-1){
+
+    :root {
+        /* Font size */
+        --font-large: 50px;
+        --font-medium: 25px;
+        --font-regular: 18px;
+        --font-small: 16px;
+        --font-micro: 14px;
+    }
+
+    .about__story {
+        padding: 30px 0;
+        position: relative;
+        top: 200px;
+    }
+
+    .about__story__description {
+        //text-align: center;
+        margin-top: 180px;
+        padding: 60px 47px;
+    }
+
+    .about__story__container p {
+        line-height: 35px;
+    }
+}
+
+@include mq($desktop-2){
+
+ :root {
+  /* Font size */
+  --font-large: 50px;
+  --font-medium: 25px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+ }
+
+ .about__story {
+  padding: 30px 0;
+  position: relative;
+  top: 200px;
+ }
+
+ .about__story__description {
+  //text-align: center;
+  margin-top: 180px;
+  padding: 60px 200px;
+  line-height: 30px;
+ }
+
+}
